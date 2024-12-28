@@ -46,6 +46,15 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
+#### 트러블 슈팅
+1. ModuleNotFoundError: No module named 'myweb.settings'
+   
+프로젝트가 2번 생성되면서 myweb>myweb 형식으로 되어있어서 Django가 myweb.settings 파일을 인식하지 못함.
+프로젝트 1개를 삭제한 후 다시 실행.
+
+2. django.db.utils.OperationalError: no such table:
+모델을 생성한 후 데이터베이스에 적용하기 위한 마이그레이션 작업을 하지 않아서 발생함.
+마이그레이션 이후 정상 실행.
 
 ### Chapter 3. ToDo 목록 웹 서비스 만들기
 
