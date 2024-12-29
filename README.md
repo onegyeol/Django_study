@@ -57,6 +57,36 @@ python manage.py createsuperuser
 마이그레이션 이후 정상 실행.
 
 ### Chapter 3. ToDo 목록 웹 서비스 만들기
+CRUD?
+- Create
+- Read
+- Update
+- Delete
+
+위 4가지 기능을 포함하고 있는 Todo 목록 웹 서비스를 제작함.
+
+1. models
+```
+title = models.CharField(max_length=100)
+description = models.TextField(blank=True)
+created = models.DateTimeField(auto_now_add=True)
+complete = models.BooleanField(default=False)
+important = models.BooleanField(default=False)
+```
+
+2. html page
+완료 리스트 목록, 리스트 생성, 생성된 리스트 목록, 리스트 상세 정보
+
+#### 트러블 슈팅
+1. 책 92쪽 완료된 목록 코드 잘못됨
+
+책에 적힌 코드가 잘못 나와있어서 코드에 오류가 났음.
+```
+def done_list(request):
+    dones = Todo.objects.filter(complete=False)
+    return render(request, 'todo/done_list.html', {'dones':dones})
+```
+위와 같이 수정하여 실행.
 
 ### Chapter 4. REST Framework
 
