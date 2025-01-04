@@ -6,7 +6,7 @@ django는 MTV패턴을 기반으로 개발된다.
 - Model : 데이터와 관련된 부분
 - Template : 사용자에게 보여지는 부분. 탬플릿 태그 {} 사용 가능
 - View : Model의 데이터를 Template로 전달하고 Template에서 발생하는 이벤트 처리
-<img width="700" src="https://github.com/user-attachments/assets/26e73c6d-3d6b-4357-9032-e49e938327da"/>
+<img width="700" src="https://github.com/user-attachments/assets/26e73c6d-3d6b-4357-9032-e49e938327da"/> <br>
 사진 출처 : https://velog.io/@hamcheese/Django-MTVMVC
 
 1. 가상 환경 세팅
@@ -90,7 +90,7 @@ def done_list(request):
 ## Chapter 4. REST Framework
 Django REST Framework는 Django를 기반으로 REST API서버를 만들기 위한 라이브러리
 이를 사용하면 기존 자체적인 웹 템플릿에게 바로 데이터를 전달해주었던 방식에서 JSON과 같은 양식으로 다양한 플랫폼의 클라이언트들에게 데이터 제공 가능해짐
-<img width="700" src="https://github.com/user-attachments/assets/6a36f704-3340-44c8-a009-0c05cd6f254f"/>
+<img width="700" src="https://github.com/user-attachments/assets/6a36f704-3340-44c8-a009-0c05cd6f254f"/> <br>
 
 ```
 pip install djangorestframework # 해당 명령어 사용해 가상환경에 설치함
@@ -117,7 +117,7 @@ API 테스트를 위해 Insomnia라는 툴 사용함.
 https://insomnia.rest/ # 환경에 맞춰 설치
 ```
 터미널 창에서 서버를 띄워준 뒤 API 테스트 진행하면 됨.
-<img width="700" alt="스크린샷 2025-01-04 오후 11 52 31" src="https://github.com/user-attachments/assets/0ef017f4-f365-4958-a5c6-d04c57bae654" />
+<img width="700" alt="스크린샷 2025-01-04 오후 11 52 31" src="https://github.com/user-attachments/assets/0ef017f4-f365-4958-a5c6-d04c57bae654" /> <br>
 
 ## Chapter 6. REST Framework + React.js 게시판
 
