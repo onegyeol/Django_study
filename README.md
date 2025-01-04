@@ -89,8 +89,36 @@ def done_list(request):
 위와 같이 수정하여 실행.
 
 ### Chapter 4. REST Framework
+Django REST Framework는 Django를 기반으로 REST API서버를 만들기 위한 라이브러리
+이를 사용하면 기존 자체적인 웹 템플릿에게 바로 데이터를 전달해주었던 방식에서 JSON과 같은 양식으로 다양한 플랫폼의 클라이언트들에게 데이터 제공 가능해짐
+![image](https://github.com/user-attachments/assets/6a36f704-3340-44c8-a009-0c05cd6f254f)
+
+```
+pip install djangorestframework # 해당 명령어 사용해 가상환경에 설치함
+```
+
+그리고 시리얼라이저라는 개념 등장
+시리얼라이저는 Django 모델을 JSON으로 변환해주는 것임
+
+```
+#model은 ch.2에 나오는 모델을 사용함
+from rest_framework import serializers
+from .models import Todo
+
+class TodoSimpleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Todo
+        fields = ('id', 'title', 'complete', 'important') # 해당 필드의 모델 데이터를 JSON으로 변환
+```
+
 
 ### Chapter 5. ToDo 목록 API 제작
+API 테스트를 위해 Insomnia라는 툴 사용함. 
+```
+https://insomnia.rest/ # 환경에 맞춰 설치
+```
+터미널 창에서 서버를 띄워준 뒤 API 테스트 진행하면 됨.
+<img width="890" alt="스크린샷 2025-01-04 오후 11 52 31" src="https://github.com/user-attachments/assets/0ef017f4-f365-4958-a5c6-d04c57bae654" />
 
 ### Chapter 6. REST Framework + React.js 게시판
 
