@@ -119,5 +119,4 @@ https://insomnia.rest/ # 환경에 맞춰 설치
 터미널 창에서 서버를 띄워준 뒤 API 테스트 진행하면 됨.
 <img width="700" alt="스크린샷 2025-01-04 오후 11 52 31" src="https://github.com/user-attachments/assets/0ef017f4-f365-4958-a5c6-d04c57bae654" /> <br>
 
-## Chapter 6. REST Framework + React.js 게시판
 
