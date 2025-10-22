@@ -89,7 +89,7 @@ def done_list(request):
 
 ## Chapter 4. REST Framework
 Django REST Framework는 Django를 기반으로 REST API서버를 만들기 위한 라이브러리
-이를 사용하면 기존 자체적인 웹 템플릿에게 바로 데이터를 전달해주었던 방식에서 JSON과 같은 양식으로 다양한 플랫폼의 클라이언트들에게 데이터 제공 가능해짐
+이를 사용하면 기존 자체적인 웹 템플릿에게 바로 데이터를 전달해주었던 방식에서 JSON과 같은 양식으로 다양한 플랫폼의 클라이언트들에게 데이터 제공 가능해짐 <br>
 <img width="700" src="https://github.com/user-attachments/assets/6a36f704-3340-44c8-a009-0c05cd6f254f"/> <br>
 
 ```
